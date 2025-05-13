@@ -89,7 +89,3 @@ By 2025:
 - 100K+ daily active earners  
 - Top 10 Solana dApp by engagement  
 
----
-
-📩 **Let’s connect!**  
-@Key2CoinApp | team@key2coin.com  
