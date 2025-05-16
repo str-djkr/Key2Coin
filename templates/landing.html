@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- Animated Background -->
+  <div class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 opacity-90"></div>
+    <div class="absolute inset-0 animate-pulse">
+      <div class="h-full w-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
+    </div>
+  </div>
+
+  <!-- Header with Glass Morphism -->
+  <header class="flex items-center justify-between px-8 py-6 backdrop-blur-md bg-white/5 border-b border-indigo-900/30 sticky top-0 z-50">
+    <div class="flex items-center space-x-2">
+      <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+          <path d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
+          <path d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z" />
+          <path d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z" />
+        </svg>
+      </div>
+      <h1 class="text-3xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Key2Coin</h1>
+    </div>
+    <a href="/api/register/" class="relative group">
+      <span class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300"></span>
+      <span class="relative px-6 py-2.5 rounded-lg bg-indigo-600 text-white font-medium group-hover:bg-indigo-700 transition duration-300 flex items-center">
+        Join Now
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 ml-1.5 -mr-1 transform group-hover:translate-x-1 transition duration-200">
+          <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+        </svg>
+      </span>
+    </a>
+  </header>
+
+  <!-- Hero Section with Floating Animation -->
+  <section class="relative text-center py-32 px-4 overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-64 bg-indigo-600/20 rounded-full blur-3xl"></div>
+    <div class="relative z-10">
+      <h2 class="text-6xl md:text-7xl font-extrabold mb-8 animate-fade-in-up">
+        <span class="bg-gradient-to-r from-indigo-300 via-purple-400 to-indigo-300 bg-clip-text text-transparent">Type.</span>
+        <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">Earn.</span>
+        <span class="bg-gradient-to-r from-pink-400 via-red-400 to-pink-400 bg-clip-text text-transparent">Thrive.</span>
+      </h2>
+      <p class="max-w-2xl mx-auto text-xl text-gray-300 mb-10 leading-relaxed animate-fade-in-up delay-100">
+        Transform your keyboard activity into <span class="font-semibold text-indigo-300">crypto rewards</span> on the Solana blockchain.
+        Gamify your workflow. <span class="font-semibold text-purple-300">Get paid for being productive.</span>
+      </p>
+      <div class="animate-fade-in-up delay-200">
+        <a href="/api/register/" class="relative inline-flex items-center px-8 py-4 overflow-hidden text-lg font-medium text-white border-2 border-indigo-500 rounded-lg group">
+          <span class="absolute left-0 block w-full h-0 transition-all bg-gradient-to-r from-indigo-600 to-purple-600 opacity-100 group-hover:h-full top-0 duration-400 ease"></span>
+          <span class="relative flex items-center">
+            Start Earning Today
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition duration-200">
+              <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features with Card Hover Effects -->
+  <section class="px-8 py-20 relative">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-0 left-1/4 w-64 h-64 bg-purple-600/20 rounded-full blur-3xl animate-float"></div>
+      <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl animate-float-delay"></div>
+    </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 relative z-10">
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8 transition-all duration-300 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-2">
+        <div class="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-indigo-400">
+            <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+            <path fill-rule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-indigo-400 mb-3">Earn While Typing</h3>
+        <p class="text-gray-300 leading-relaxed">Get <span class="font-semibold text-white">SOL tokens</span> for your daily keyboard activity — no extra effort needed. We reward your natural workflow.</p>
+      </div>
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8 transition-all duration-300 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/10 hover:-translate-y-2">
+        <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-purple-400">
+            <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-purple-400 mb-3">Gamified Productivity</h3>
+        <p class="text-gray-300 leading-relaxed">Complete <span class="font-semibold text-white">daily challenges</span>, keep streaks, and climb the leaderboard. Turn work into a rewarding game.</p>
+      </div>
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8 transition-all duration-300 hover:border-pink-500 hover:shadow-lg hover:shadow-pink-500/10 hover:-translate-y-2">
+        <div class="w-12 h-12 bg-pink-500/10 rounded-lg flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-400">
+            <path d="M4.5 3.75a3 3 0 00-3 3v.75h21v-.75a3 3 0 00-3-3h-15z" />
+            <path fill-rule="evenodd" d="M22.5 9.75h-21v7.5a3 3 0 003 3h15a3 3 0 003-3v-7.5zm-18 3.75a.75.75 0 01.75-.75h6a.75.75 0 010 1.5h-6a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-pink-400 mb-3">Powered by Solana</h3>
+        <p class="text-gray-300 leading-relaxed">Lightning-fast <span class="font-semibold text-white">transactions</span> with near-zero fees. The most efficient blockchain for micro-rewards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works with Animated Steps -->
+  <section class="py-24 px-8 bg-gradient-to-b from-gray-900/50 to-gray-950/80">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-16">
+        <span class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">How It Works</span>
+      </h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 relative">
+              <div class="w-12 h-12 rounded-full bg-indigo-600/20 flex items-center justify-center">
+                <span class="text-indigo-400 font-bold text-xl">1</span>
+              </div>
+              <div class="absolute left-6 top-12 w-0.5 h-8 bg-gradient-to-b from-indigo-500/50 to-transparent"></div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Install the App</h3>
+              <p class="text-gray-300">Download our lightweight desktop app that runs securely in the background.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 relative">
+              <div class="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center">
+                <span class="text-purple-400 font-bold text-xl">2</span>
+              </div>
+              <div class="absolute left-6 top-12 w-0.5 h-8 bg-gradient-to-b from-purple-500/50 to-transparent"></div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Type as Usual</h3>
+              <p class="text-gray-300">We track your real keyboard activity (100% private) and convert it to coins.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 relative">
+              <div class="w-12 h-12 rounded-full bg-pink-600/20 flex items-center justify-center">
+                <span class="text-pink-400 font-bold text-xl">3</span>
+              </div>
+              <div class="absolute left-6 top-12 w-0.5 h-8 bg-gradient-to-b from-pink-500/50 to-transparent"></div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Earn Rewards</h3>
+              <p class="text-gray-300">Get bonuses for streaks and convert coins to SOL anytime.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 rounded-full bg-green-600/20 flex items-center justify-center">
+                <span class="text-green-400 font-bold text-xl">4</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Withdraw Instantly</h3>
+              <p class="text-gray-300">Send SOL to your wallet with one click. No hidden fees.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -inset-4">
+            <div class="w-full h-full rotate-6 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-2xl blur-md"></div>
+          </div>
+          <img src="https://placehold.co/600x400?text=App+Dashboard" alt="App UI" class="relative rounded-xl shadow-2xl border border-gray-800/50">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animated Call to Action -->
+  <section class="py-28 px-8 bg-gradient-to-r from-indigo-900/50 via-purple-900/50 to-pink-900/50 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-0 left-0 w-64 h-64 bg-indigo-500/10 rounded-full filter blur-3xl animate-pulse-slow"></div>
+      <div class="absolute bottom-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse-slow-delay"></div>
+    </div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        <span class="bg-gradient-to-r from-white via-indigo-300 to-white bg-clip-text text-transparent">Ready to Monetize Your Productivity?</span>
+      </h2>
+      <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Join <span class="font-semibold text-white">10,000+</span> remote workers and developers who already earn crypto just by typing.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/api/register/" class="relative px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg overflow-hidden group">
+          <span class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-700 opacity-0 group-hover:opacity-100 transition duration-300"></span>
+          <span class="relative flex items-center justify-center">
+            Get Started - It's Free
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition duration-200">
+              <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <a href="#" class="px-8 py-4 border-2 border-indigo-500/50 text-indigo-300 font-semibold rounded-lg hover:bg-indigo-500/10 transition duration-300">
+          See How It Works
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Gradient Border -->
+  <footer class="relative pt-16 pb-8 px-8 border-t border-gray-800/50">
+    <div class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-2 mb-6 md:mb-0">
+          <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+              <path d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
+              <path d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z" />
+              <path d="M10.933 19.231l-7.668-4.13-1.37.739a.75.75 0 000 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 000-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 01-2.134-.001z" />
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">Key2Coin</h2>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://x.com/Key2Coin" class="text-gray-400 hover:text-indigo-300 transition duration-300">Twitter</a>
+<!--          <a href="#" class="text-gray-400 hover:text-indigo-300 transition duration-300">Discord</a>-->
+          <a href="https://github.com/str-djkr/Key2Coin/tree/main" class="text-gray-400 hover:text-indigo-300 transition duration-300">Docs</a>
+<!--          <a href="#" class="text-gray-400 hover:text-indigo-300 transition duration-300">Privacy</a>-->
+        </div>
+      </div>
+      <div class="mt-8 text-center text-sm text-gray-500">
+        &copy; 2025 Key2Coin. All rights reserved. Powered by Solana.
+      </div>
+    </div>
+  </footer>
+{% endblock %}
+
+{% block extra_head %}
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    @keyframes float-delay {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.1; }
+      50% { opacity: 0.2; }
+    }
+    @keyframes pulse-slow-delay {
+      0%, 100% { opacity: 0.05; }
+      50% { opacity: 0.15; }
+    }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-float { animation: float 8s ease-in-out infinite; }
+    .animate-float-delay { animation: float-delay 8s ease-in-out infinite 2s; }
+    .animate-pulse-slow { animation: pulse-slow 6s ease-in-out infinite; }
+    .animate-pulse-slow-delay { animation: pulse-slow-delay 6s ease-in-out infinite 1.5s; }
+    .animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
+    .animate-fade-in-up.delay-100 { animation-delay: 0.1s; opacity: 0; }
+    .animate-fade-in-up.delay-200 { animation-delay: 0.2s; opacity: 0; }
+  </style>
+{% endblock %}
